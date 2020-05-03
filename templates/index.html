@@ -1,0 +1,9 @@
+<h1>Todo:</h1>
+
+{% for task in tasks %}
+    {% if task.complited %}
+        <p><s>{{task.title}}</s></p>
+    {% else %}
+        <p>{{task.title}}</p>
+    {% endif %}
+{% endfor %}
