@@ -4,5 +4,5 @@ from .models import Task
 
 @admin.register(Task)
 class TaskAdmin(admin.ModelAdmin):
-    list_display = ('title', 'complited')
-    list_editable = ('complited',)
+    list_display = ('title', 'completed')
+    list_editable = ('completed',)
